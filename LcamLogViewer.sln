@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LcamLogViewer", "LcamLogViewer\LcamLogViewer.csproj", "{A16759C3-DC12-4CD9-821E-9562FD1A0AE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A16759C3-DC12-4CD9-821E-9562FD1A0AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16759C3-DC12-4CD9-821E-9562FD1A0AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16759C3-DC12-4CD9-821E-9562FD1A0AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16759C3-DC12-4CD9-821E-9562FD1A0AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C12EDA7A-4D8B-4085-9C89-46637824B7D3}
+	EndGlobalSection
+EndGlobal
