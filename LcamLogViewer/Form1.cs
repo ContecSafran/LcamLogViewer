@@ -25,8 +25,8 @@ namespace LcamLogViewer
             lcamLog.timeList = new List<DateTime>();
             LoadFilterFiles(true);
             //ColumnList.Items.AddRange(lcamLog.columnFilter.ToArray());
-            string inputFile = @"C:\Users\User\Documents\Visual Studio 2019\Projects\LcamLogViewer\safran_hdr_backup_20220112_02.csv";
-            ReadLogFile(inputFile);
+            //string inputFile = @"C:\Users\User\Documents\Visual Studio 2019\Projects\LcamLogViewer\safran_hdr_backup_20220112_02.csv";
+            //ReadLogFile(inputFile);
             //new
             //toCsv
             //time update
