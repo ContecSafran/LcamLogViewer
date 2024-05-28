@@ -118,7 +118,7 @@ namespace LcamLogViewer
                 FileInfo fi = new FileInfo(files[i]);
                 FilterList.Items.Add(fi.Name.Replace(".txt", ""));
             }
-            if (reSelect)
+            if (reSelect && FilterList.Items.Count > 0)
             {
                 FilterList.SelectedIndex = 0;
                 LoadFilterFile(checkFilterDirectory() + "\\" + FilterList.SelectedItem.ToString() + ".txt");
