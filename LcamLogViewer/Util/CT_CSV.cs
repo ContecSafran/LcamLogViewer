@@ -18,7 +18,7 @@ namespace Contec_MCS.Util
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             DataGridViewTextBoxColumn dataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            dataGridViewCellStyle1.Format = "yyyy-MM-dd hh:mm:ss";
+            dataGridViewCellStyle1.Format = "yyyy-MM-dd hh:mm:ss.fff";
             dataGridViewCellStyle1.NullValue = null;
             LogViewer.Columns.Add(dataGridViewTextBoxColumn);
             dataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
@@ -35,7 +35,7 @@ namespace Contec_MCS.Util
             {
                 DateTime dateValue;
 
-                if (!DateTime.TryParseExact(columns[0], "yyyy-MM-dd hh:mm:ss", koKR, DateTimeStyles.None, out dateValue))
+                if (!DateTime.TryParseExact(columns[0], "yyyy-MM-dd hh:mm:ss.fff", koKR, DateTimeStyles.None, out dateValue))
                 {
                     MessageBox.Show("시간 변환이 정상적으로 이뤄지지 않았습니다.");
                     break;
@@ -71,7 +71,7 @@ namespace Contec_MCS.Util
             {
                 DateTime dateValue;
 
-                if (!DateTime.TryParseExact(columns[0], "yyyy-MM-dd hh:mm:ss", koKR, DateTimeStyles.None, out dateValue))
+                if (!DateTime.TryParseExact(columns[0], "yyyy-MM-dd hh:mm:ss.fff", koKR, DateTimeStyles.None, out dateValue))
                 {
                     MessageBox.Show("시간 변환이 정상적으로 이뤄지지 않았습니다.");
                     break;
@@ -138,7 +138,7 @@ namespace Contec_MCS.Util
 
                                 DateTime dateValue;
 
-                                if (!DateTime.TryParseExact(columns[0], "yyyy-MM-dd hh:mm:ss", koKR, DateTimeStyles.None, out dateValue))
+                                if (!DateTime.TryParseExact(columns[0], "yyyy-MM-dd hh:mm:ss.fff", koKR, DateTimeStyles.None, out dateValue))
                                 {
                                     MessageBox.Show("시간 변환이 정상적으로 이뤄지지 않았습니다.");
                                     break;

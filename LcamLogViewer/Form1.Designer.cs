@@ -33,10 +33,16 @@ namespace LcamLogViewer
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.SaveFilterFileBtn = new System.Windows.Forms.Button();
+            this.SaveFilterFileTxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DeleteFilterFileBtn = new System.Windows.Forms.Button();
             this.CurrentColumnList = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.SearchColumnBtn = new System.Windows.Forms.Button();
+            this.SearchColumnFilter = new System.Windows.Forms.TextBox();
             this.ColumnList = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,29 +54,23 @@ namespace LcamLogViewer
             this.StartTime = new System.Windows.Forms.DateTimePicker();
             this.StartTimeLabel = new System.Windows.Forms.Label();
             this.FilterList = new System.Windows.Forms.ListBox();
+            this.RefreshButton = new System.Windows.Forms.Button();
             this.LogViewer = new System.Windows.Forms.DataGridView();
-            this.SearchColumnFilter = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DeleteFilterFileBtn = new System.Windows.Forms.Button();
-            this.SaveFilterFileTxt = new System.Windows.Forms.TextBox();
-            this.SaveFilterFileBtn = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.NewButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.RefreshButton = new System.Windows.Forms.Button();
             this.CsvSaveButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogViewer)).BeginInit();
-            this.tableLayoutPanel7.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +140,71 @@ namespace LcamLogViewer
             this.tableLayoutPanel2.Size = new System.Drawing.Size(500, 425);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 4;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel7.Controls.Add(this.SaveFilterFileBtn, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.SaveFilterFileTxt, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.DeleteFilterFileBtn, 3, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 52);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(500, 21);
+            this.tableLayoutPanel7.TabIndex = 16;
+            // 
+            // SaveFilterFileBtn
+            // 
+            this.SaveFilterFileBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SaveFilterFileBtn.Location = new System.Drawing.Point(300, 0);
+            this.SaveFilterFileBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.SaveFilterFileBtn.Name = "SaveFilterFileBtn";
+            this.SaveFilterFileBtn.Size = new System.Drawing.Size(100, 21);
+            this.SaveFilterFileBtn.TabIndex = 13;
+            this.SaveFilterFileBtn.Text = "필터 파일 저장";
+            this.SaveFilterFileBtn.UseVisualStyleBackColor = true;
+            this.SaveFilterFileBtn.Click += new System.EventHandler(this.SaveFilterFileBtn_Click);
+            // 
+            // SaveFilterFileTxt
+            // 
+            this.SaveFilterFileTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SaveFilterFileTxt.Location = new System.Drawing.Point(150, 0);
+            this.SaveFilterFileTxt.Margin = new System.Windows.Forms.Padding(0);
+            this.SaveFilterFileTxt.Name = "SaveFilterFileTxt";
+            this.SaveFilterFileTxt.Size = new System.Drawing.Size(150, 21);
+            this.SaveFilterFileTxt.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(2, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 17);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "필터 리스트";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DeleteFilterFileBtn
+            // 
+            this.DeleteFilterFileBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeleteFilterFileBtn.Location = new System.Drawing.Point(400, 0);
+            this.DeleteFilterFileBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.DeleteFilterFileBtn.Name = "DeleteFilterFileBtn";
+            this.DeleteFilterFileBtn.Size = new System.Drawing.Size(100, 21);
+            this.DeleteFilterFileBtn.TabIndex = 10;
+            this.DeleteFilterFileBtn.Text = "필터 파일 삭제";
+            this.DeleteFilterFileBtn.UseVisualStyleBackColor = true;
+            this.DeleteFilterFileBtn.Click += new System.EventHandler(this.DeleteFilterFileBtn_Click);
+            // 
             // CurrentColumnList
             // 
             this.CurrentColumnList.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -192,6 +257,16 @@ namespace LcamLogViewer
             this.SearchColumnBtn.Text = "추가";
             this.SearchColumnBtn.UseVisualStyleBackColor = true;
             this.SearchColumnBtn.Click += new System.EventHandler(this.SearchColumnBtn_Click);
+            // 
+            // SearchColumnFilter
+            // 
+            this.SearchColumnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SearchColumnFilter.Location = new System.Drawing.Point(100, 0);
+            this.SearchColumnFilter.Margin = new System.Windows.Forms.Padding(0);
+            this.SearchColumnFilter.Name = "SearchColumnFilter";
+            this.SearchColumnFilter.Size = new System.Drawing.Size(330, 21);
+            this.SearchColumnFilter.TabIndex = 11;
+            this.SearchColumnFilter.TextChanged += new System.EventHandler(this.SearchColumnFilter_TextChanged);
             // 
             // ColumnList
             // 
@@ -334,6 +409,18 @@ namespace LcamLogViewer
             this.FilterList.SelectedIndexChanged += new System.EventHandler(this.FilterList_SelectedIndexChanged);
             this.FilterList.DoubleClick += new System.EventHandler(this.FilterList_DoubleClick);
             // 
+            // RefreshButton
+            // 
+            this.RefreshButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RefreshButton.Location = new System.Drawing.Point(0, 399);
+            this.RefreshButton.Margin = new System.Windows.Forms.Padding(0);
+            this.RefreshButton.Name = "RefreshButton";
+            this.RefreshButton.Size = new System.Drawing.Size(500, 26);
+            this.RefreshButton.TabIndex = 17;
+            this.RefreshButton.Text = "Refresh";
+            this.RefreshButton.UseVisualStyleBackColor = true;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
+            // 
             // LogViewer
             // 
             this.LogViewer.AllowDrop = true;
@@ -350,81 +437,6 @@ namespace LcamLogViewer
             this.LogViewer.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.LogViewer.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             // 
-            // SearchColumnFilter
-            // 
-            this.SearchColumnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SearchColumnFilter.Location = new System.Drawing.Point(100, 0);
-            this.SearchColumnFilter.Margin = new System.Windows.Forms.Padding(0);
-            this.SearchColumnFilter.Name = "SearchColumnFilter";
-            this.SearchColumnFilter.Size = new System.Drawing.Size(330, 21);
-            this.SearchColumnFilter.TabIndex = 11;
-            this.SearchColumnFilter.TextChanged += new System.EventHandler(this.SearchColumnFilter_TextChanged);
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.ColumnCount = 4;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel7.Controls.Add(this.SaveFilterFileBtn, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.SaveFilterFileTxt, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.DeleteFilterFileBtn, 3, 0);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 52);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(500, 21);
-            this.tableLayoutPanel7.TabIndex = 16;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(2, 2);
-            this.label1.Margin = new System.Windows.Forms.Padding(2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "필터 리스트";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DeleteFilterFileBtn
-            // 
-            this.DeleteFilterFileBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeleteFilterFileBtn.Location = new System.Drawing.Point(400, 0);
-            this.DeleteFilterFileBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.DeleteFilterFileBtn.Name = "DeleteFilterFileBtn";
-            this.DeleteFilterFileBtn.Size = new System.Drawing.Size(100, 21);
-            this.DeleteFilterFileBtn.TabIndex = 10;
-            this.DeleteFilterFileBtn.Text = "필터 파일 삭제";
-            this.DeleteFilterFileBtn.UseVisualStyleBackColor = true;
-            this.DeleteFilterFileBtn.Click += new System.EventHandler(this.DeleteFilterFileBtn_Click);
-            // 
-            // SaveFilterFileTxt
-            // 
-            this.SaveFilterFileTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveFilterFileTxt.Location = new System.Drawing.Point(150, 0);
-            this.SaveFilterFileTxt.Margin = new System.Windows.Forms.Padding(0);
-            this.SaveFilterFileTxt.Name = "SaveFilterFileTxt";
-            this.SaveFilterFileTxt.Size = new System.Drawing.Size(150, 21);
-            this.SaveFilterFileTxt.TabIndex = 12;
-            // 
-            // SaveFilterFileBtn
-            // 
-            this.SaveFilterFileBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveFilterFileBtn.Location = new System.Drawing.Point(300, 0);
-            this.SaveFilterFileBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.SaveFilterFileBtn.Name = "SaveFilterFileBtn";
-            this.SaveFilterFileBtn.Size = new System.Drawing.Size(100, 21);
-            this.SaveFilterFileBtn.TabIndex = 13;
-            this.SaveFilterFileBtn.Text = "필터 파일 저장";
-            this.SaveFilterFileBtn.UseVisualStyleBackColor = true;
-            this.SaveFilterFileBtn.Click += new System.EventHandler(this.SaveFilterFileBtn_Click);
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
@@ -434,7 +446,7 @@ namespace LcamLogViewer
             this.CsvSaveButton});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(142, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(111, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // NewButton
@@ -451,18 +463,6 @@ namespace LcamLogViewer
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // RefreshButton
-            // 
-            this.RefreshButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RefreshButton.Location = new System.Drawing.Point(0, 399);
-            this.RefreshButton.Margin = new System.Windows.Forms.Padding(0);
-            this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(500, 26);
-            this.RefreshButton.TabIndex = 17;
-            this.RefreshButton.Text = "Refresh";
-            this.RefreshButton.UseVisualStyleBackColor = true;
-            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // CsvSaveButton
             // 
@@ -492,6 +492,8 @@ namespace LcamLogViewer
             this.toolStripContainer1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -501,8 +503,6 @@ namespace LcamLogViewer
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogViewer)).EndInit();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
