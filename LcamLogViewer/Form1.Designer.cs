@@ -80,11 +80,11 @@ namespace LcamLogViewer
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(966, 425);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1372, 589);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(966, 450);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1372, 614);
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -104,7 +104,7 @@ namespace LcamLogViewer
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(966, 425);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1372, 589);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.tableLayoutPanel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
@@ -137,7 +137,7 @@ namespace LcamLogViewer
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(500, 425);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(500, 589);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -210,9 +210,9 @@ namespace LcamLogViewer
             this.CurrentColumnList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CurrentColumnList.FormattingEnabled = true;
             this.CurrentColumnList.ItemHeight = 12;
-            this.CurrentColumnList.Location = new System.Drawing.Point(3, 308);
+            this.CurrentColumnList.Location = new System.Drawing.Point(3, 416);
             this.CurrentColumnList.Name = "CurrentColumnList";
-            this.CurrentColumnList.Size = new System.Drawing.Size(494, 88);
+            this.CurrentColumnList.Size = new System.Drawing.Size(494, 143);
             this.CurrentColumnList.TabIndex = 14;
             this.CurrentColumnList.DoubleClick += new System.EventHandler(this.CurrentColumnList_DoubleClick);
             // 
@@ -226,7 +226,7 @@ namespace LcamLogViewer
             this.tableLayoutPanel5.Controls.Add(this.SearchColumnBtn, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.SearchColumnFilter, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 284);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 392);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -273,9 +273,9 @@ namespace LcamLogViewer
             this.ColumnList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ColumnList.FormattingEnabled = true;
             this.ColumnList.ItemHeight = 12;
-            this.ColumnList.Location = new System.Drawing.Point(3, 192);
+            this.ColumnList.Location = new System.Drawing.Point(3, 246);
             this.ColumnList.Name = "ColumnList";
-            this.ColumnList.Size = new System.Drawing.Size(494, 89);
+            this.ColumnList.Size = new System.Drawing.Size(494, 143);
             this.ColumnList.TabIndex = 12;
             // 
             // tableLayoutPanel6
@@ -286,7 +286,7 @@ namespace LcamLogViewer
             this.tableLayoutPanel6.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.removeColumn, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 168);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 222);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
@@ -404,7 +404,7 @@ namespace LcamLogViewer
             this.FilterList.Location = new System.Drawing.Point(0, 73);
             this.FilterList.Margin = new System.Windows.Forms.Padding(0);
             this.FilterList.Name = "FilterList";
-            this.FilterList.Size = new System.Drawing.Size(500, 95);
+            this.FilterList.Size = new System.Drawing.Size(500, 149);
             this.FilterList.TabIndex = 7;
             this.FilterList.SelectedIndexChanged += new System.EventHandler(this.FilterList_SelectedIndexChanged);
             this.FilterList.DoubleClick += new System.EventHandler(this.FilterList_DoubleClick);
@@ -412,10 +412,10 @@ namespace LcamLogViewer
             // RefreshButton
             // 
             this.RefreshButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RefreshButton.Location = new System.Drawing.Point(0, 399);
+            this.RefreshButton.Location = new System.Drawing.Point(0, 562);
             this.RefreshButton.Margin = new System.Windows.Forms.Padding(0);
             this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(500, 26);
+            this.RefreshButton.Size = new System.Drawing.Size(500, 27);
             this.RefreshButton.TabIndex = 17;
             this.RefreshButton.Text = "Refresh";
             this.RefreshButton.UseVisualStyleBackColor = true;
@@ -432,7 +432,7 @@ namespace LcamLogViewer
             this.LogViewer.Name = "LogViewer";
             this.LogViewer.ReadOnly = true;
             this.LogViewer.RowTemplate.Height = 23;
-            this.LogViewer.Size = new System.Drawing.Size(460, 419);
+            this.LogViewer.Size = new System.Drawing.Size(866, 583);
             this.LogViewer.TabIndex = 3;
             this.LogViewer.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.LogViewer.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
@@ -478,10 +478,10 @@ namespace LcamLogViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 450);
+            this.ClientSize = new System.Drawing.Size(1372, 614);
             this.Controls.Add(this.toolStripContainer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lcam Log Viewer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
